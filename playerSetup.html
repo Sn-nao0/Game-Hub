@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Hub - Player Setup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="playerSetup" class="screen active">
+    <h1 id="setupTitle">Player Setup</h1>
+    <form id="playerForm">
+      <div id="tictactoeSetup" class="setup-options">
+        <div class="option">
+          <h3>Two Players</h3>
+          <input type="text" id="player1Name" placeholder="Enter Player 1 Name" required />
+          <input type="text" id="player2Name" placeholder="Enter Player 2 Name" required />
+        </div>
+        <div class="or-separator">or</div>
+        <div class="option">
+          <h3>Play vs Bot</h3>
+          <input type="text" id="player1NameBot" placeholder="Enter Your Name" required />
+          <div class="bot-label">Player 2: Bot</div>
+        </div>
+        <label for="rounds">Select Number of Rounds:</label>
+        <select id="rounds" required>
+          <option value="1">1 Round</option>
+          <option value="2">2 Rounds</option>
+          <option value="3">3 Rounds</option>
+          <option value="4">4 Rounds</option>
+          <option value="5">5 Rounds</option>
+        </select>
+      </div>
+      <button type="submit" id="startGameBtn">Start Game</button>
+      <button type="button" id="backToSelectionBtn">Back</button>
+    </form>
+  </div>
+  <script src="js/playerSetup.js"></script>
+</body>
+</html>

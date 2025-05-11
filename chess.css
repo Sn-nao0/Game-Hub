@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #f0e6d2;
+  text-align: center;
+}
+
+#chessGame {
+  max-width: 480px;
+  margin: 20px auto;
+  background: #fff8dc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+#chessBoard {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+  gap: 0;
+  margin: 20px auto;
+  border: 2px solid #333;
+  width: 400px;
+  height: 400px;
+}
+
+.chessCell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.chessCell.light {
+  background-color: #f0d9b5;
+}
+
+.chessCell.dark {
+  background-color: #b58863;
+}
+
+#gameInfo {
+  margin-top: 15px;
+}
+
+#turnIndicator {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+button {
+  margin: 5px 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #8b4513;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a2e0c;
+}

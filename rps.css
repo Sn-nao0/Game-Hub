@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#rpsGame {
+  max-width: 400px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#rpsChoices {
+  margin: 20px 0;
+}
+
+.rpsChoice {
+  font-size: 24px;
+  padding: 15px 25px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.rpsChoice:hover {
+  background-color: #45a049;
+}
+
+#rpsResult {
+  font-size: 20px;
+  margin: 20px 0;
+  min-height: 40px;
+}
+
+button#restartRpsBtn, button#exitRpsBtn {
+  margin: 10px 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #2196F3;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button#restartRpsBtn:hover, button#exitRpsBtn:hover {
+  background-color: #0b7dda;
+}

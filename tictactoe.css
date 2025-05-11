@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#tictactoeGame {
+  max-width: 400px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#cellContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cell {
+  background-color: #e0e0e0;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #d0d0d0;
+}
+
+#statusText {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #2196F3;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0b7dda;
+}
+
+#scoreboard {
+  margin-top: 20px;
+  font-size: 18px;
+}

@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #87ceeb, #fff);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#flappyGame {
+  position: relative;
+  width: 400px;
+  margin: 20px auto;
+  background: #70c5ce;
+  border: 2px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#flappyCanvas {
+  display: block;
+  background: #70c5ce;
+  margin: 0 auto;
+  border-bottom: 50px solid #ded895; /* ground */
+}
+
+#flappyStatus {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+}
+
+button:hover {
+  background-color: #45a049;
+}

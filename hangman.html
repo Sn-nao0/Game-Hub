@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hangman</title>
+  <link rel="stylesheet" href="hangman.css" />
+</head>
+<body>
+  <div id="hangmanGame">
+    <h1>Hangman</h1>
+    <canvas id="hangmanCanvas" width="200" height="250" style="background:#ffe4f0; border-radius: 20px; box-shadow: 0 6px 15px rgba(255, 105, 180, 0.4); margin-bottom: 20px;"></canvas>
+    <p id="hangmanWord"></p>
+    <p id="hangmanGuesses"></p>
+    <input type="text" id="hangmanInput" maxlength="1" placeholder="Enter a letter" />
+    <button id="hangmanGuessBtn" class="bubbly-button">Guess</button>
+    <h2 id="hangmanStatus"></h2>
+    <button id="restartHangmanBtn" class="bubbly-button">Restart</button>
+    <button id="exitHangmanBtn" class="bubbly-button">Exit to Hub</button>
+  </div>
+  <script src="js/games/hangman.js"></script>
+</body>
+</html>
